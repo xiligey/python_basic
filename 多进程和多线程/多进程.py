@@ -50,7 +50,7 @@ import os, time, random
 
 def write(q):
     for value in ['A', 'B', 'C', 'D']:
-        print 'put %s to queue' % value
+        print('put %s to queue' % value)
         q.put(value)
         time.sleep(1)
 
@@ -58,7 +58,7 @@ def write(q):
 def read(q):
     while True:
         value = q.get(True)
-        print 'Get %s from queue' % value
+        print('Get %s from queue' % value)
 
 
 if __name__ == '__main__':

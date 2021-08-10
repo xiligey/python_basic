@@ -1,4 +1,3 @@
-# coding=utf-8
 import logging
 
 
@@ -12,7 +11,6 @@ class FooError(StandardError):
 
 
 def foo(n):
-    """return 100/n"""
     return 100 / n
 
 

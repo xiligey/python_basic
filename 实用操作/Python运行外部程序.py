@@ -1,7 +1,8 @@
-"""Python运行外部程序的三种方法
+"""Python运行外部程序的四种方法
 1. os.system(command)
 2. ShellExecute
 3. CreateProcess
+4. call
 """
 
 if __name__ == '__main__':
@@ -38,3 +39,8 @@ if __name__ == '__main__':
     #               None,
     #               None,
     #               win32process.STARTUPINFO())
+
+    # 4. call
+    from subprocess import call
+
+    call("pip install --upgrade pip", shell=True)

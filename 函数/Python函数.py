@@ -1,6 +1,17 @@
+"""
+- 无参函数
+- 带普通参数的函数
+- 参数带默认值
+- 带*args参数的函数
+- 带**kwargs参数的函数
+- 匿名函数
+"""
+
+
 # 无参函数
 def f1():
     return 'Hello World'
+
 
 # 带普通参数
 def f2(i):
@@ -29,6 +40,9 @@ def f5(i, **dict1):
 f6 = lambda x: x + 1
 
 if __name__ == '__main__':
+    print(f1)
+    print(f2(1))
+    print(f3(1))
     print(f4(1, *[2, 3, 4]))
     print(f5(1, **{'a': 1, 'b': 2, 'c': 3}))
     print(f6(3))
